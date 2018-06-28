@@ -1,0 +1,6 @@
+Sample.deployed().then((s) => {console.log(s.address)})
+
+web3.eth.sendTransaction({value: 100, from: web3.eth.accounts[2], to: "0x501751bf4bfc2878472686bb7e126eb2281e87eb"})
+
+Sample.at("0x501751bf4bfc2878472686bb7e126eb2281e87eb").increase()
+
